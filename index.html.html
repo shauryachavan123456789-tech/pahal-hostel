@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pahal Girls Hostel</title>
+<link rel="stylesheet" href="hostel.css">
+</head>
+
+<body>
+
+<nav>
+  <div class="nav-title">
+    <h2>PAHAL GIRLS HOSTELS -MANEGED BY SANSKRUTI HOSTELS</h2>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Pahal Girls Hostel</h1>
+  <p>Safe & Comfortable Stay in Latur</p>
+
+  <a href="tel:8830575044" class="btn call">Call</a>
+  <a href="https://wa.me/918830575044" class="btn whatsapp">WhatsApp</a>
+</section>
+
+<!-- BOOKING -->
+<section class="section">
+<h2>Book Now</h2>
+
+<form onsubmit="sendBooking(event)">
+<input id="name" placeholder="Name" required>
+<input id="mobile" placeholder="Mobile No." required>
+
+<select id="room">
+<option>Double Sharing</option>
+<option>Triple Sharing</option>
+</select>
+
+<button type="submit" class="btn">Book via WhatsApp</button>
+</form>
+
+</section>
+
+<!-- FACILITIES -->
+<section class="section">
+<h2>✨ Facilities</h2>
+
+<div class="facilities-grid">
+
+<div class="facility">📶 High-Speed WiFi</div>
+<div class="facility">🚿 Attached Bathrooms</div>
+<div class="facility">🛗 Lift Facility</div>
+<div class="facility">🍽️ Dining Area</div>
+<div class="facility">📚 Reading Room</div>
+<div class="facility">💧 24/7 Water Supply</div>
+<div class="facility">🔒 Security</div>
+<div class="facility">🛎️ Reception</div>
+
+<div class="facility">📍 Close to Coachings</div>
+<div class="facility">🆔 Biometric Scan for Everyone</div>
+<div class="facility">📹 24/7 CCTV Surveillance</div>
+<div class="facility">🏥 24 Hour Medical Facility</div>
+
+</div>
+</section>
+
+<!-- GALLERY -->
+<section class="section">
+<h2>📸 Gallery</h2>
+
+<div class="gallery">
+<img src="1.jpeg">
+<img src="2.jpeg">
+<img src="3.jpeg">
+<img src="4.jpeg">
+<img src="5.jpeg">
+<img src="6.jpeg">
+<img src="7.jpeg">
+<img src="8.jpeg">
+<img src="9.jpeg">
+<img src="10.jpeg">
+</div>
+
+</section>
+
+<!-- REVIEWS -->
+<section class="section">
+<h2>💬 Reviews</h2>
+
+<div class="review-wrapper">
+  <div class="review-box" id="review"></div>
+</div>
+
+</section>
+
+<!-- FAQ -->
+<section class="section">
+<h2>❓ FAQs</h2>
+
+<div class="faq-item" onclick="toggle(this)">
+Is the hostel safe for girls?
+<p>The hostel ensures safety with monitoring, secure entry, and a peaceful environment for students and working women.</p>
+</div>
+
+<div class="faq-item" onclick="toggle(this)">
+Do you provide food?
+<p>Yes, hygienic and nutritious food is provided daily.</p>
+</div>
+
+<div class="faq-item" onclick="toggle(this)">
+Is WiFi available?
+<p>High-speed WiFi is available throughout the hostel.</p>
+</div>
+
+<div class="faq-item" onclick="toggle(this)">
+Are rooms furnished?
+<p>Rooms are fully furnished with beds, storage, and proper lighting.</p>
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+<h2>📍 Contact</h2>
+
+<div class="location-box">
+Thakre Chowk, behind Nilangekar Hospital,<br>
+Rabindranath Tagore Nagar, Narayan Nagar,<br>
+Latur, Maharashtra 413512 <br><br>
+
+📞 8830575044 <br>
+📞 7218403139 / 8975650610
+</div>
+
+<iframe src="https://maps.google.com/maps?q=Thakre%20Chowk%20Latur&output=embed"></iframe>
+
+</section>
+
+<!-- POPUP -->
+<div id="popup">
+  <div class="popup-box">
+    <h3>Booking Confirmed ✅</h3>
+    <p>Redirecting to WhatsApp...</p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+</div>
+
+<script src="hostel.js"></script>
+</body>
+</html>
